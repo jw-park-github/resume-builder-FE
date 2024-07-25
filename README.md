@@ -119,7 +119,7 @@
 
 
 ## 1-4. Service Architecture
-<img width="800" alt="ARC" src="https://github.com/user-attachments/assets/f5d8f601-6d58-4cb1-834d-b4d5974d85a4">
+<img width="800" alt="ARC" src="https://github.com/user-attachments/assets/ac6131b5-c41a-4fef-acc9-199300da62c0">
 
 
 <br>
