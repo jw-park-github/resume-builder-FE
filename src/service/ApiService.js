@@ -41,7 +41,7 @@ export function call(api, method, request, authRequired = true) {
         });
       })
       .catch((error) => {
-        console.error("Fetch error:", error); // 에러 로그
+        console.error("Fetch error:", error);
         if (error.status === 403) {
           window.location.href = "/login";
         }
