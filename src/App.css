@@ -1,0 +1,87 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.leftPanel {
+  background-color: #001e59;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.devDocTitle {
+  color: white;
+  font-size: 5rem;
+  margin: 0;
+  text-align: center;
+}
+
+.rightPanel {
+  background-color: #eef0f3;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-logo {
+  width: 60vw;
+  margin: 0;
+  animation: float 3s ease-in-out infinite; /* 위아래로 살짝 이동하는 애니메이션 추가 */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 그림자 추가 */
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* 위로 이동 */
+  }
+}
+.App-text {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #001e59;
+}
+
+.App-button {
+  width: 10vw;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(72, 109, 164);
+  color: white;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.App-button:hover {
+  transform: translateY(-5px);
+}

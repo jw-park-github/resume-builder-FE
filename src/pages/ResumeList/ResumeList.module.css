@@ -1,0 +1,252 @@
+.App {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.leftPanel {
+    background-color: #486da3;
+    min-width: 200px;
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.devdocTitle {
+    color: white;
+    margin: 0;
+    font-size: 5rem;
+}
+
+
+h1.title {
+    font-size: 2rem;
+}
+
+h2.title {
+    font-size: 1.7rem;
+}
+
+
+.rightPanel {
+    background-color: #eef0f3;
+    min-width: 600px;
+    width: 77%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.title {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.inputContainer {
+    background-color: #486da2;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 38.5vw;
+    align-items: center;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.label {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.resumeInputBox {
+
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 38.5vw;
+}
+
+.resumeInput {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.resumeInput input {
+    font-size: 1.2rem;
+    padding: 1rem;
+    flex: 1;
+    height: 38px;
+    box-sizing: border-box;
+    border: none;
+    margin-right: 10px;
+}
+
+.resumeInput input:focus {
+    outline: none;
+    border: none;
+}
+
+.resumeInputButton {
+    width: 80px;
+    height: 50px;
+    background-color: rgba(0, 69, 171, 1);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 버튼 텍스트를 가로로 정렬 */
+    white-space: nowrap; /* 텍스트가 한 줄로 유지되도록 설정 */
+}
+
+.inputDescription {
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: 10px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+
+}
+
+.resumeListsContainer {
+    background-color: #486da4;
+    border-radius: 10px;
+    width: 40vw;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 그림자 추가 */
+}
+
+.resumeTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.resumeInfo {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+.resumeTable td {
+    padding: 15px;
+    background-color: white;
+    height: 60px;
+}
+
+.resumeTitle {
+    margin-top: 4px;
+    font-size: 1.5rem;
+    color: rgba(0, 30, 89, 1);
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.resumeDate {
+    font-size: 0.8rem;
+    color: gray;
+    text-align: left;
+    margin-top: 4px;
+}
+
+.resumeActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    text-align: right;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.noResumes {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.resumeActions button {
+    font-size: 1rem;
+    padding: 0.3rem;
+    color: white;
+    background-color: rgba(0, 69, 171, 1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.resumeActions button:hover {
+    background-color: #486da4; /* 마우스 오버 시 배경색 */
+    color: white;
+}
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.pagination li a {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.pagination li a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.active a {
+    font-weight: bold;
+}
+
+.loginButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: rgba(0, 69, 171, 1);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}

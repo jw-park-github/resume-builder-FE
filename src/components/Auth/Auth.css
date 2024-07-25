@@ -1,0 +1,117 @@
+/* Login.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.App {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.leftPanel {
+    background-color: #001e59;
+    min-width: 200px;
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.devDocTitle {
+    color: white;
+    font-size: 5rem;
+    margin: 0;
+    text-align: center;
+}
+
+.rightPanel {
+    min-width: 800px;
+    background-color: #eef0f3;
+    width: 77%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContainer {
+    background-color: #edf3fd;
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.loginTitle {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buttonContainer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginButton, .signupButton {
+    width: 100%;
+    min-width: 320px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loginButton {
+    background-color: rgba(0, 69, 171, 1);
+    color: white;
+}
+
+.signupButton {
+    background-color: white;
+    color: #001e59;
+    border: 1px solid #001e59;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.textField {
+    width: 380px;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
